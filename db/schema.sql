@@ -59,7 +59,7 @@ INSERT INTO images (id, imgurl) VALUES (13, "https://ca.slack-edge.com/T2SV1LBC6
 INSERT INTO images (id, imgurl) VALUES (14, "https://ca.slack-edge.com/T2SV1LBC6-U02R98W4738-1e0ee56c5236-512");
 INSERT INTO images (id, imgurl) VALUES (15, "https://ca.slack-edge.com/T2SV1LBC6-U02RFUN90JE-1742c83ec261-512");
 INSERT INTO images (id, imgurl) VALUES (16, "https://ca.slack-edge.com/T2SV1LBC6-U02R98W01K8-8212b9214aa7-512");
-INSERT INTO images (id, imgurl) VALUES (17, "https://ca.slack-edge.com/T2SV1LBC6-U02R98W01K8-8212b9214aa7-512");
+INSERT INTO images (id, imgurl) VALUES (17, "https://ca.slack-edge.com/T2SV1LBC6-U02RG0C5U67-564038ca9acb-512");
 INSERT INTO images (id, imgurl) VALUES (18, "https://ca.slack-edge.com/T2SV1LBC6-U02RUJBQ3SM-50f2bb3e2331-512");
 INSERT INTO images (id, imgurl) VALUES (19, "https://ca.slack-edge.com/T2SV1LBC6-U02RKR7LF0A-c36889daf200-512");
 INSERT INTO images (id, imgurl) VALUES (20, "https://ca.slack-edge.com/T2SV1LBC6-U02RJ7YDSF6-b7aaa8ad4742-512");
