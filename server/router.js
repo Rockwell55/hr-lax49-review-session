@@ -5,6 +5,7 @@ const controller = require('./controller.js');
 
 // routes for retrieving all students and adding a student's name
 router.route('/students')
+  .get(controller.students.getStudents)
 
 
 // route for updating a student's name

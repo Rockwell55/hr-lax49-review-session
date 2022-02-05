@@ -4,7 +4,16 @@ const controller = {
   students: {
     getStudents: function (req, res) {
       // TODO: add your code here to fetch all students
+      queryStr = 'SELECT * FROM students';
+      queryArgs = [];
 
+      db.query(queryStr, queryArgs, (err, results) => {
+        if (err) {
+          res.status(404).send(err);
+        } else {
+          res.status(200).send(results);
+        }
+      });
     },
     postName: function (req, res) {
       // TODO: add your code here to add a student's name
