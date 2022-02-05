@@ -8,11 +8,13 @@ export default class Add extends React.Component {
       name: '',
       image: ''
     }
+    this.changeHandler = this.changeHandler.bind(this);
   }
 
   changeHandler(e){
     // Todo: Add your code here to handle the data the client inputs
-
+    // console.log(e.target);
+    this.setState({[e.target.name]: e.target.value});
   }
 
   handleSubmit(e){
@@ -38,11 +40,11 @@ export default class Add extends React.Component {
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label>Student Name: </label>
-          <input type="text" name="name" />
+          <input type="text" name="name" onChange={this.changeHandler}/>
           <label>Image URL: </label>
-          <input type="text" name="image" />
+          <input type="text" name="image" onChange={this.changeHandler}/>
           <button type="submit" value="Submit">Submit</button>
         </form>
         <h1>Preview:</h1>

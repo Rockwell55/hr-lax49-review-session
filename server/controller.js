@@ -32,7 +32,7 @@ const controller = {
       // TODO: add your code here to update a student's name
       var queryStr = 'UPDATE students SET name=(?) WHERE id=(?)';
       var queryArgs = [req.body.name, req.params.id];   // make sure this is the right req path
-
+      console.log('params ', req.params);
       db.query(queryStr, queryArgs, (err, results) => {
         if (err) {
           res.status(404).send(err);

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ListElement = () => (
+const ListElement = (props) => (
   <span>
-    <div>Julian</div>
-    <img src='https://ca.slack-edge.com/T02DNK3PH-UD0AF2EBH-73605fa7261b-512'></img>
+    <div>{props.name}</div>
+    <img src={props.image}></img>
   </span>
 );
 
