@@ -31,8 +31,8 @@ const controller = {
     updateName: function (req, res) {
       // TODO: add your code here to update a student's name
       var queryStr = 'UPDATE students SET name=(?) WHERE id=(?)';
-      var queryArgs = [req.body.name, req.params.id];   // make sure this is the right req path
-      console.log('params ', req.params);
+      var queryArgs = [req.body.newName, req.params.id];   // make sure this is the right req path
+      // console.log('params ', req.params);
       db.query(queryStr, queryArgs, (err, results) => {
         if (err) {
           res.status(404).send(err);
@@ -45,8 +45,9 @@ const controller = {
   images: {
     postImg: function (req, res) {
       // TODO: add your code here to add a student image
+      // console.log('image req body ', req.body);
       var queryStr = 'INSERT INTO images (imgurl) VALUES (?)';
-      var queryArgs = [req.body.image];  // make sure this is the right req path
+      var queryArgs = [req.body.imgurl];  // make sure this is the right req path
 
       db.query(queryStr, queryArgs, (err, results) => {
         if (err) {

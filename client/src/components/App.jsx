@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import List from './List.jsx';
 import Add from './Add.jsx';
-import ListElement from './ListElement.jsx';
+// import ListElement from './ListElement.jsx';
 import Random from './Random.jsx';
 
 export default class App extends React.Component {
